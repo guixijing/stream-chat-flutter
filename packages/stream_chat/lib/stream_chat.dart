@@ -1,7 +1,17 @@
 library stream_chat;
 
 export 'package:async/async.dart';
-export 'package:dio/src/dio_error.dart';
+export 'package:dio/dio.dart'
+    show
+        DioException,
+        DioExceptionType,
+        RequestOptions,
+        CancelToken,
+        Interceptor,
+        InterceptorsWrapper,
+        MultipartFile,
+        Options,
+        ProgressCallback;
 export 'package:dio/src/multipart_file.dart';
 export 'package:dio/src/options.dart';
 export 'package:dio/src/options.dart' show ProgressCallback;
@@ -47,6 +57,7 @@ export 'src/core/api/requests.dart';
 export 'src/core/api/responses.dart';
 export 'src/core/api/stream_chat_api.dart' show PushProvider;
 export 'src/core/error/error.dart';
+export 'src/core/http/interceptor/logging_interceptor.dart';
 export 'src/core/models/action.dart';
 export 'src/core/models/attachment.dart';
 export 'src/core/models/attachment_file.dart';
