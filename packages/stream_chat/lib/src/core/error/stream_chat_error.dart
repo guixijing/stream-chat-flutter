@@ -107,7 +107,6 @@ class StreamChatNetworkError extends StreamChatError {
           '',
       statusCode: errorResponse?.statusCode ?? response?.statusCode,
       data: errorResponse,
-      isRequestCancelledError: exception.type == DioExceptionType.cancel,
     )..stackTrace = exception.stackTrace;
   }
 

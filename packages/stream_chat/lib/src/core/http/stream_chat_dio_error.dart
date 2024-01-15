@@ -8,7 +8,7 @@ class StreamChatDioError extends DioException {
     required this.error,
     required RequestOptions requestOptions,
     Response? response,
-    DioErrorType type = DioErrorType.other,
+    DioErrorType type = DioExceptionType.unknown,
   }) : super(
           error: error,
           requestOptions: requestOptions,
